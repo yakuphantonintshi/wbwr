@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Neue Plak", sans-serif;
+}
+@font-face {
+  font-family: 'Neue Plak';
+}
+
+@font-face {
+  font-family: 'Condensed Black';
+  src: url('./assets/Neue-Plak-CondBlack.ttf') format('truetype');
+  font-style: 'Neue Plak';
+}
+@font-face {
+  font-family: 'Regular Black';
+  src: url('./assets/Neue-Plak-Regular.otf') format('truetype');
+  font-style: 'Neue Plak';
+}
+@font-face {
+  font-family: 'Semibold Black';
+  src: url('./assets/Neue-Plak-SemiBold.otf') format('truetype');
+  font-style: 'Neue Plak';
+}
+@font-face {
+  font-family: 'Bold Black';
+  src: url('./assets/Neue-Plak-Bold.ttf') format('truetype');
+  font-style: 'Neue Plak';
+}
