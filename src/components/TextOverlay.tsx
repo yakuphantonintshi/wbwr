@@ -54,11 +54,12 @@ const TextOverlay: React.FC = () => {
         </p>
 
         <button
-          className="mt-4 text-[16px] border border-white text-white py-2 px-4 bg-transparent w-[213px]"
+          className="mt-4 border border-white text-white py-0 px-4 bg-transparent w-[213px] h-[46px] flex justify-center items-center"
           style={{
             fontFamily: "'Neue Plak Regular', sans-serif",
             fontWeight: 400,
             fontSize: "16px",
+            lineHeight: "46px"
           }}
         >
           Shop Project Rock
@@ -66,25 +67,31 @@ const TextOverlay: React.FC = () => {
       </div>
 
       <div className="block sm:hidden mt-4 px-4 text-black">
-        <p className="text-[12px]" style={{
-              fontFamily: "'Neue Plak Bold', sans-serif",
-              fontWeight: 700,
-            }}>
+        <p
+          className="text-[12px]"
+          style={{
+            fontFamily: "'Neue Plak Bold', sans-serif",
+            fontWeight: 700,
+          }}
+        >
           Project Rock
         </p>
         <p
           className="text-[36px] leading-[1.1] tracking-tight"
-         style={{
-              fontFamily: "'Neue Plak Condensed', sans-serif",
-            }}
+          style={{
+            fontFamily: "'Neue Plak Condensed', sans-serif",
+          }}
         >
           EVERY SIDE OF STRONG
         </p>
 
-        <p className="mt-4 text-[12px]"   style={{
+        <p
+          className="mt-4 text-[12px]"
+          style={{
             fontFamily: "'Neue Plak Regular', sans-serif",
             fontWeight: 400,
-          }}>
+          }}
+        >
           The Underground collection is inspired by the idea of a Project Rock
           fight club. A place where we push each other harder to make each other
           stronger. A drop dedicated to you and your crew. The neon colourways
