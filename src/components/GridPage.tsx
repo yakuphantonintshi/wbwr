@@ -32,7 +32,7 @@ const GridPage: React.FC = () => {
               muted
               preload="metadata"
             >
-              <source src="/public/assets/ig_video.mp4" type="video/mp4" />
+              <source src="/assets/ig_video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
