@@ -1,6 +1,5 @@
 import './App.css';
 import PictureOne from './components/picture1';
-// import OnePicture from './components/onePicture';
 import NavBar from './components/NavBar';
 import AnotherOne from './components/AnotherOne';
 import GridPage from './components/GridPage';
@@ -16,7 +15,6 @@ function App() {
     <VideoOverlay/>
       <PictureOne />
       <TextOverlay/>
-      {/* <OnePicture /> */}
       <AnotherOne />
       <GridPage/>
       <Footer/>

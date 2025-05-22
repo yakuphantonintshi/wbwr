@@ -9,17 +9,50 @@ const PictureOne: React.FC = () => {
   ];
 
   return (
-    <div className="mt-[60px] px-4">
-      <div className="max-w-fit mx-auto flex flex-col gap-0">
-        <p className="text-xl font-bold mb-[5px] text-black">Our best gear</p>
-        <p className="w-full mb-2 font-normal whitespace-nowrap text-black">
+    <div className="mt-[40px] sm:mt-[60px] px-4 w-full">
+      <div className="max-w-[1072px] mx-auto flex flex-col">
+        <p
+          className=" mb-[5px] text-black"
+          style={{
+            fontFamily: "'Neue Plak Bold', sans-serif",
+            fontWeight: 700,
+            fontSize: "24px",
+          }}
+        >
+          Our best gear
+        </p>
+        <p className="text-[14px] mb-4 text-black"   style={{
+            fontFamily: "'Neue Plak Regular', sans-serif",
+            fontWeight: 400,
+            fontSize: "14px",
+          }}>
           Unlock your potential with the best UA Gear
         </p>
-        <div className="flex gap-2">
+        <div className="hidden sm:flex gap-4 flex-wrap justify-start">
           {gearItems.map((item, index) => (
             <div className="flex flex-col items-start" key={index}>
-              <img src={item.src} alt={item.alt} className="w-64 h-auto mb-2" />
-              <p className="underline mt-2 text-black">Shop now</p>
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="w-64 h-auto mb-2 object-cover"
+              />
+              <p className="text-[12px] underline text-black" 
+            style={{
+            fontFamily: "'Neue Plak Semi', sans-serif",
+            fontWeight: 400,
+            fontSize: "14px",
+          }}>Shop now</p>
+            </div>
+          ))}
+        </div>
+        <div className="sm:hidden flex overflow-x-auto gap-4 py-2 scrollbar-hide">
+          {gearItems.map((item, index) => (
+            <div className="flex-shrink-0 w-[256px]" key={index}>
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="w-full h-auto object-cover mb-2"
+              />
             </div>
           ))}
         </div>
