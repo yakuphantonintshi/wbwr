@@ -27,15 +27,14 @@ const GridPage: React.FC = () => {
         <div className="hidden sm:grid grid-cols-3 grid-rows-2 gap-2 h-[744px]">
           <div className="col-span-1 row-span-2">
             <video
-  className="w-full h-full object-cover"
-  controls
-  muted
-  preload="metadata"
->
-  <source src="/public/assets/ig_video.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-
+              className="w-full h-full object-cover"
+              controls
+              muted
+              preload="metadata"
+            >
+              <source src="/public/assets/ig_video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className="row-span-1">
@@ -70,9 +69,12 @@ const GridPage: React.FC = () => {
         </div>
         <div className="sm:hidden flex flex-col gap-2">
           <div className="w-full h-[248px]">
-            <video className="w-full h-full object-cover" controls
-  muted
-  preload="metadata">
+            <video
+              className="w-full h-full object-cover"
+              controls
+              muted
+              preload="metadata"
+            >
               <source src="/assets/ig_video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
